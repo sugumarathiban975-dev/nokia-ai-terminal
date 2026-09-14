@@ -1,0 +1,6 @@
+{
+  "name": "Nokia 225 AI Terminal",
+  "description": "Lightweight AI terminal interface designed for Nokia 225 feature phones with chat, history, and AI model connectivity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

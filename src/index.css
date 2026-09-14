@@ -1,0 +1,270 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 5px;
+  background: #d8d8d8;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #111111;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Terminal Container */
+.terminal {
+  max-width: 480px;
+  margin: 12px auto;
+  padding: 8px;
+  background: #ffffff;
+  border: 1px solid #777777;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.terminal-header {
+  text-align: center;
+  border-bottom: 1px solid #999999;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+}
+
+.terminal-title {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.terminal-subtitle {
+  font-size: 11px;
+  color: #555555;
+  margin-top: 3px;
+}
+
+/* Status */
+.terminal-status {
+  padding: 5px 8px;
+  margin-bottom: 7px;
+  border: 1px solid #aaaaaa;
+  background: #eeeeee;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tabs */
+.terminal-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 7px;
+}
+
+.terminal-tab-button {
+  flex: 1;
+  margin: 0;
+  padding: 7px;
+  font-size: 13px;
+  background: #eeeeee;
+  border: 1px solid #888888;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+}
+
+.terminal-tab-button.active {
+  background: #cccccc;
+  font-weight: bold;
+  border-color: #666666;
+}
+
+/* Form inputs & select */
+.terminal-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 3px;
+  font-size: 13px;
+}
+
+.terminal-select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7px;
+  margin-bottom: 7px;
+  font-size: 14px;
+  border: 1px solid #888888;
+  background-color: #ffffff;
+  border-radius: 0;
+}
+
+/* Chat display */
+.terminal-chat {
+  height: 240px;
+  overflow-y: auto;
+  border: 1px solid #999999;
+  background: #f7f7f7;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 7px;
+  font-family: Arial, sans-serif;
+}
+
+.terminal-message {
+  margin-bottom: 9px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.terminal-message.you {
+  color: #0055aa;
+}
+
+.terminal-message.ai {
+  color: #176b25;
+}
+
+.terminal-message.system {
+  color: #555555;
+}
+
+.terminal-message.error {
+  color: #aa0000;
+}
+
+/* Input */
+.terminal-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #888888;
+  font-size: 14px;
+  background: #ffffff;
+  border-radius: 0;
+}
+
+.terminal-input:focus {
+  outline: 2px solid #555555;
+}
+
+/* Counter */
+.terminal-counter {
+  text-align: right;
+  color: #777777;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+/* Buttons */
+.terminal-button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 6px;
+  background: #eeeeee;
+  border: 1px solid #777777;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background-color 0.1s ease;
+}
+
+.terminal-button:hover:not(:disabled) {
+  background: #e2e2e2;
+}
+
+.terminal-button:active:not(:disabled) {
+  background: #cccccc;
+}
+
+.terminal-button:disabled {
+  color: #888888;
+  cursor: not-allowed;
+  background: #f0f0f0;
+  border-color: #cccccc;
+}
+
+/* History panel */
+.terminal-history-title {
+  font-weight: bold;
+  margin-bottom: 7px;
+  font-size: 14px;
+}
+
+.terminal-history-empty {
+  color: #666666;
+  text-align: center;
+  padding: 24px 8px;
+  background: #fafafa;
+  border: 1px dashed #cccccc;
+  margin-bottom: 7px;
+}
+
+.terminal-history-item {
+  border: 1px solid #aaaaaa;
+  background: #f5f5f5;
+  padding: 7px;
+  margin-bottom: 6px;
+}
+
+.terminal-history-name {
+  font-weight: bold;
+  margin-bottom: 3px;
+  word-wrap: break-word;
+  font-size: 13px;
+}
+
+.terminal-history-date {
+  color: #777777;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.terminal-history-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.terminal-history-actions button {
+  width: 50%;
+  margin-bottom: 0;
+  padding: 6px;
+  font-size: 12px;
+}
+
+/* Footer */
+.terminal-footer {
+  text-align: center;
+  font-size: 10px;
+  color: #777777;
+  border-top: 1px solid #cccccc;
+  padding-top: 6px;
+  margin-top: 7px;
+}
+
+/* Inline Confirm Box */
+.terminal-confirm-box {
+  background: #fff0f0;
+  border: 1px solid #cc8888;
+  padding: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.terminal-confirm-box p {
+  margin: 0 0 6px 0;
+  font-weight: bold;
+  color: #881111;
+  font-size: 12px;
+}
+
+.terminal-confirm-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.terminal-confirm-actions button {
+  flex: 1;
+  margin-bottom: 0;
+  padding: 5px;
+  font-size: 12px;
+}
